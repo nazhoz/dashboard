@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='flex'>
-        <nav className=''>
+        <nav className='bg-black h-[97vh] text-white mt-2 ml-2 w-[20%] rounded-md'>
         <Logo/>
         <Navs/>
         <UserProfile/>
