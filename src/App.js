@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import Analytics from './pages/Analytics/Analytics'
 import Finance from './pages/Finance/Finance'
 import Reports from './pages/Reports/Reports'
+import Users from './pages/UserProfile/Users'
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Navbar/>}>
         <Route index element={<Home/>}/>
-        <Route path='analytics' element={<Analytics/>}/>
-        <Route path='finance' element={<Finance/>}/>
-        <Route path='reports' element={<Reports/>}/>
+        <Route path='/analytics' element={<Analytics/>}/>
+        <Route path='/finance' element={<Finance/>}/>
+        <Route path='/reports' element={<Reports/>}/>
+        <Route path='/user' element={<Users/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
